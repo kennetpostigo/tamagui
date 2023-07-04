@@ -2077,9 +2077,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:0.7.1":
-  version: 0.7.1
-  resolution: "@expo/cli@npm:0.7.1"
+"@expo/cli@npm:0.7.3":
+  version: 0.7.3
+  resolution: "@expo/cli@npm:0.7.3"
   dependencies:
     "@babel/runtime": ^7.20.0
     "@expo/code-signing-certificates": 0.0.5
@@ -2144,7 +2144,7 @@ __metadata:
     ws: ^8.12.1
   bin:
     expo-internal: build/bin/cli
-  checksum: 5b84f3ad6c57fa9c64a0edd99558ada7fca8556d6137213df141b90cd4c93b3605dafce1a72cb11f0448857c220c7be63cde295a2cb13d99ba1f122ea362da05
+  checksum: f1b03efbec0dc534ccf96bfee5c63f2f16e039730a6e07ea25f74222fef70bb169f57b0fb25c5fb2640a04c3f755cdeca280cbe1058d6723d46af01cd180a00b
   languageName: node
   linkType: hard
 
@@ -2158,7 +2158,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/config-plugins@npm:6.0.1, @expo/config-plugins@npm:~6.0.0":
+"@expo/config-plugins@npm:6.0.2":
+  version: 6.0.2
+  resolution: "@expo/config-plugins@npm:6.0.2"
+  dependencies:
+    "@expo/config-types": ^48.0.0
+    "@expo/json-file": ~8.2.37
+    "@expo/plist": ^0.0.20
+    "@expo/sdk-runtime-versions": ^1.0.0
+    "@react-native/normalize-color": ^2.0.0
+    chalk: ^4.1.2
+    debug: ^4.3.1
+    find-up: ~5.0.0
+    getenv: ^1.0.0
+    glob: 7.1.6
+    resolve-from: ^5.0.0
+    semver: ^7.3.5
+    slash: ^3.0.0
+    xcode: ^3.0.1
+    xml2js: 0.4.23
+  checksum: 2c689f767d3fd6578535b90bae42f6559e7e53321d71e621d38975fdf49853f9c16b5bd7a5f8574a72133cb2b93490c28a46a8c5dcc1f999940b7fa742acfca9
+  languageName: node
+  linkType: hard
+
+"@expo/config-plugins@npm:~6.0.0":
   version: 6.0.1
   resolution: "@expo/config-plugins@npm:6.0.1"
   dependencies:
@@ -5285,7 +5308,7 @@ __metadata:
     "@welldone-software/why-did-you-render": ^7.0.1
     babel-plugin-transform-inline-environment-variables: ^0.4.4
     burnt: ^0.10.0
-    expo: ~48.0.15
+    expo: ~48.0.18
     expo-dev-client: ~2.2.1
     expo-font: ^11.0.1
     expo-linear-gradient: ^12.0.1
@@ -5297,9 +5320,9 @@ __metadata:
     metro-runtime: "*"
     mini-css-extract-plugin: ^2.7.6
     pod-install: ^0.1.38
-    react: ^18.2.0
+    react: 18.2.0
     react-dom: ^18.2.0
-    react-native: ^0.71.7
+    react-native: 0.71.8
     react-native-gesture-handler: ^2.8.0
     react-native-ios-modal: 2.0.0-3
     react-native-safe-area-context: 4.5.0
@@ -12315,14 +12338,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:~48.0.15":
-  version: 48.0.16
-  resolution: "expo@npm:48.0.16"
+"expo@npm:~48.0.18":
+  version: 48.0.19
+  resolution: "expo@npm:48.0.19"
   dependencies:
     "@babel/runtime": ^7.20.0
-    "@expo/cli": 0.7.1
+    "@expo/cli": 0.7.3
     "@expo/config": 8.0.2
-    "@expo/config-plugins": 6.0.1
+    "@expo/config-plugins": 6.0.2
     "@expo/vector-icons": ^13.0.0
     babel-preset-expo: ~9.3.2
     cross-spawn: ^6.0.5
@@ -12343,7 +12366,7 @@ __metadata:
     uuid: ^3.4.0
   bin:
     expo: bin/cli.js
-  checksum: e1d2f68501c8870449fd9c993859d32f37ed1695f6c18a4ad43785805e25fd600d5d1e267a851c961a7f83dea7c140bf62333b34832eed433131e50aaa00149b
+  checksum: a5d79e6e3b82081c4d2b5a30109010b91639f8808479579fd829e00e35aa1943417c27d6d5b650f9998aab636f298d68cfa6d989d247aa380a6aa00fe26fa40b
   languageName: node
   linkType: hard
 

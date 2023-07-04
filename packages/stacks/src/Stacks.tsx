@@ -23,13 +23,29 @@ const variants = {
   },
 } as const
 
-export const YStack = styled(Stack, {
-  flexDirection: 'column',
+export const FrameXStack = styled(Stack, {})
+const HigherOrderXStack = FrameXStack.styleable((props, ref) => {
+  if (props.debug && props.debug === 'borders') {
+    return (
+      <FrameXStack
+        ref={ref}
+        borderColor="red"
+        borderWidth={0.5}
+        borderStyle="solid"
+        {...props}
+      />
+    )
+  }
+  return <FrameXStack />
+})
+
+export const XStack = styled(HigherOrderXStack, {
+  flexDirection: 'row',
   variants,
 })
 
-export const XStack = styled(Stack, {
-  flexDirection: 'row',
+export const YStack = styled(HigherOrderXStack, {
+  flexDirection: 'column',
   variants,
 })
 

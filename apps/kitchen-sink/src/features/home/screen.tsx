@@ -21,7 +21,7 @@ import { useThemeControl } from '../../useKitchenSinkTheme'
 export function HomeScreen() {
   return (
     <ScrollView>
-      <YStack bc="$background" p="$3" pt="$6" pb="$8" f={1} space>
+      <YStack bc="$background" p="$3" pt="$6" pb="$8" debug="borders" f={1} space>
         <H1 fontFamily="$heading" size="$9">
           Kitchen Sink
         </H1>
@@ -31,7 +31,15 @@ export function HomeScreen() {
             <ColorSchemeListItem />
           </YGroup.Item>
         </YGroup>
-        <YStack theme="yellow" bc="$background" p="$3" br="$4" bw={1} boc="$borderColor">
+        <YStack
+          theme="yellow"
+          debug="borders"
+          bc="$background"
+          p="$3"
+          br="$4"
+          bw={1}
+          boc="$borderColor"
+        >
           <Paragraph>Welcome to the Tamagui Kitchen Sink!</Paragraph>
         </YStack>
 

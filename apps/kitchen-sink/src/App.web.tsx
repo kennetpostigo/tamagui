@@ -76,33 +76,41 @@ const SandboxFrame = (props: { children: any }) => {
       />
 
       <Theme name={screenshot ? 'blue' : undefined}>
-        <XStack w="100%" h="100%" fullscreen>
-          <YStack f={1}>{props.children}</YStack>
+        <XStack debug="borders" w="100%" h="100%" fullscreen>
+          <YStack debug="borders" f={1}>
+            {props.children}
+          </YStack>
 
           {splitView ? (
             <>
               <Separator vertical />
               <Theme name="dark">
-                <YStack f={1} bg={screenshot ? 'transparent' : '$background'}>
+                <YStack
+                  debug="borders"
+                  f={1}
+                  bg={screenshot ? 'transparent' : '$background'}
+                >
                   {props.children}
                 </YStack>
+                <YStack debug="borders"></YStack>
               </Theme>
             </>
           ) : null}
         </XStack>
       </Theme>
       {showThemeSwitch && (
-        <div
+        <YStack
           style={{
             position: 'fixed',
             bottom: 30,
             left: 20,
             fontSize: 30,
           }}
-          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          debug="borders"
+          onPress={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         >
           🌗
-        </div>
+        </YStack>
       )}
     </Provider>
   )

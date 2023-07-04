@@ -33,7 +33,7 @@ export type SpaceDirection = 'vertical' | 'horizontal' | 'both'
 
 export type TamaguiElement = HTMLElement | View
 
-export type DebugProp = boolean | 'break' | 'verbose' | 'visualize'
+export type DebugProp = boolean | 'break' | 'verbose' | 'visualize' | 'borders'
 
 /**
  * For static / studio

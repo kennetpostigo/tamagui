@@ -10,7 +10,7 @@ import type { ThemeProviderProps } from './views/ThemeProvider';
 export type { MediaStyleObject, StyleObject } from '@tamagui/helpers';
 export type SpaceDirection = 'vertical' | 'horizontal' | 'both';
 export type TamaguiElement = HTMLElement | View;
-export type DebugProp = boolean | 'break' | 'verbose' | 'visualize';
+export type DebugProp = boolean | 'break' | 'verbose' | 'visualize' | 'borders';
 /**
  * For static / studio
  */
